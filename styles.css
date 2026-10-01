@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background-color: #8B635C;
+}
+
+ul {
+     list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("imagenes/hero.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    height: 60vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 5% center;
+    padding: 0 80px;
+    margin-bottom: 40px;
+}
+
+.hero-content {
+    color: #DCBF85;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-b {
+    margin-top: 10px;
+    background-color: #8B635C;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.productos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+}
+
+.producto {
+    flex: 0 1 300px;
+    width: 300px;
+    height: auto;
+    padding: 10px;
+    border: 2px solid #DCBF85;
+    border-radius: 30px;
+    margin: 20px;
+    overflow: hidden; /* Evita cualquier desbordamiento visual */
+}
+
+.imgpro {
+    width: 100%;
+    object-fit: contain;
+}
+
+button {
+    background-color: #8B635C;
+    color: white;
+    padding: 2%;
+    border-radius: 10px;
+}
+
+.compra-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+
