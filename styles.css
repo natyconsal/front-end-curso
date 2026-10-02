@@ -6,10 +6,28 @@
 
 nav {
     background-color: #8B635C;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 1%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 ul {
-     list-style: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+    text-align: right;
+    width: 50%;
+}
+
+li {
+    padding-left: 2%;
 }
 
 a {
@@ -84,4 +102,37 @@ button {
     margin-top: 15px;
 }
 
+@media (max-width: 900px) {
+    ul {
+        width: 60%;
+    }
+}
+
+@media (max-width: 750px) {
+    ul {
+        width: 70%;
+    }
+}
+
+@media (max-width: 640px) {
+    ul {
+        width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+    ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: end;
+    text-align: right;
+    width: 50%;
+}
+li {
+    padding-top: 5%;
+}
+}
 
