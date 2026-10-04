@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
 nav {
     background-color: #8B635C;
     display: flex;
@@ -14,26 +18,29 @@ nav {
     padding: 1%;
     padding-left: 5%;
     padding-right: 5%;
+    text-decoration: none;
 }
 
 ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: right;
     flex-wrap: wrap;
     align-items: end;
     text-align: right;
-    width: 50%;
+    flex-grow: 1;
+    margin-bottom: 0;
 }
 
 li {
     padding-left: 2%;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+li > a:hover {
+    color: #DCBF85;
 }
+
+
 
 .hero {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("imagenes/hero.jpg");
@@ -90,7 +97,7 @@ a {
 button {
     background-color: #8B635C;
     color: white;
-    padding: 2%;
+    padding: 1%;
     border-radius: 10px;
 }
 
@@ -102,23 +109,32 @@ button {
     margin-top: 15px;
 }
 
-@media (max-width: 900px) {
-    ul {
-        width: 60%;
-    }
+.yacasi {
+    text-align: center;
+    margin: 2%;
 }
 
-@media (max-width: 750px) {
-    ul {
-        width: 70%;
-    }
+.yacasi > p{
+    padding: 2%;
 }
 
-@media (max-width: 640px) {
-    ul {
-        width: 80%;
-    }
+.casi:hover {
+    background-color: black;
 }
+
+.contacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: right;
+}
+
 
 @media (max-width: 600px) {
     ul {
