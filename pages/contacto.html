@@ -9,62 +9,82 @@
 </head>
 <body>
     <header>
-        <nav class="nav-va">
+        <nav class="nav-var">
             <a href="../index.html">
-                <img src="img/lcogo.png" alt="Logo" width="50">
+                <img src="../imagenes/logo.png" alt="Logo" width="50">
             </a>
             <!-- Comportamiento de bloque -->
+            
             <ul>
-                <li>
-                    <a href="../index.html">Home</a>
-                </li>
-                <li>
-                    <!-- carpeta/ para acceder a carpetas -->
-                    <a href="collares.html">Collares</a>
-                </li>
-                <li>
-                    <a href="yacasi.html">Aritos</a>
-                </li>
-                <li>
-                    <a href="yacasi.html">Pulseras</a>
-                </li>
-                <li>
-                    <a href="yacasi.html">Carteras</a>
-                </li>
                 <li>
                     <a href="contacto.html">Contacto</a>
                 </li>
                 
                 <li>
-                    <a href="yacasi.html">Carrito</a>
+                    <a href="pages/carrito.html">Carrito</a>
+                </li>
+            </ul>
+        </nav>
+        <nav class="pages">
+            <ul class="pages">
+                <li>
+                    <a class="paginas" href="../index.html">Home</a>
+                </li>
+                <li>
+                    <!-- carpeta/ para acceder a carpetas -->
+                    <a class="paginas" href="collares.html">Collares</a>
+                </li>
+                <li>
+                    <a class="paginas" href="yacasi.html">Aritos</a>
+                </li>
+                <li>
+                    <a class="paginas" href="yacasi.html">Pulseras</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="contacto">
-            <form action="https://formspree.io/f/xaeydgkg" method="post" class="form">
-                <div class="mb-3">
-                    <label for="nombre"></label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
-                </div>
-                <div class="mb-3">
-                    <label for="email"></label>
-                    <input type="email" class="form-control" id="email" name="email" placeholder="Tu mail" required>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label" for="mensaje"></label>
-                    <textarea id="mensaje" class="form-control" name="mensaje" placeholder="Dejanos tus dudas o comentarios" required></textarea>
-                </div>
-                 <div class="mb-3">
-                    <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
-                    <label class="form-check-label" for="switchCheckDefault">Querés suscribirte al newsletter?</label>
-                </div>
-                <div class="col-12">
-                    <button type="submit">Enviar</button>
-                </div>
-            </form>
-        </section>
-    </main>
+    <!-- Agregamos la clase container (o container-fluid) y d-flex/align-items-center para centrar todo verticalmente si querés -->
+    <section class="contacto container min-vh-100 d-flex align-items-center">
+        
+        <!-- La fila que va a contener las dos mitades -->
+        <div class="row w-100 align-items-center">
+            
+            <!-- col izq - redes sociales -->
+            <div class="col-md-6 col-12 mb-5 mb-md-0 text-center">
+                <h2>Seguinos en nuestras redes</h2>
+                <p>Acá podés meter tus enlaces o íconos de Instagram, X, LinkedIn, etc.</p>
+                <!-- Tus redes sociales irían acá -->
+            </div>
+
+            <!-- col derecha - formulario -->
+            <div class="col-md-6 col-12">
+                <form action="https://formspree.io/f/xaeydgkg" method="post" class="form p-4 shadow-sm rounded bg">
+                    <div class="mb-3">
+                        <label for="nombre"></label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email"></label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Tu mail" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="mensaje"></label>
+                        <textarea id="mensaje" class="form-control" name="mensaje" placeholder="Dejanos tus dudas o comentarios" required></textarea>
+                    </div>
+                     <div class="mb-3">
+                        <input class="form-check-input" type="checkbox" role="switch" id="switchCheckDefault">
+                        <label class="form-check-label" for="switchCheckDefault">Querés suscribirte al newsletter?</label>
+                    </div>
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-danger">Enviar</button> 
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+</main> 
 </body>
 </html>

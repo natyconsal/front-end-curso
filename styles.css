@@ -1,15 +1,35 @@
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100%;
+  font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Montserrat";
 }
 
 a {
     text-decoration: none;
+    color: #180c0c;
+    font-weight: bold;
+}
+
+.paginas {
+     text-decoration: none;
     color: white;
 }
+
+.paginas:hover {
+    color: #f8ef22;
+    border-bottom: 2px solid #f8ef22;
+}
+
 nav {
-    background-color: #8B635C;
+    background-color: white;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,20 +50,32 @@ ul {
     text-align: right;
     flex-grow: 1;
     margin-bottom: 0;
+    padding: 0%;
+}
+
+.pages {
+    background-color: #180c0c;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
 }
 
 li {
     padding-left: 2%;
+    border-bottom: 2px solid transparent; /* Deja un espacio para la línea sin que se vea de entrada */
+  transition: border-color 0.3s ease;
 }
 
 li > a:hover {
-    color: #DCBF85;
+    color: #ed1f24;
+    border-bottom: 2px solid #ed1f24;
 }
 
-
-
 .hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("imagenes/hero.jpg");
+    background-image:  linear-gradient(rgba(255, 253, 253, 0.6), rgba(255, 255, 255, 0.6)), url("imagenes/heroimage.jpeg");
     display: flex;
     align-items: center;
     justify-content: flex-end;
@@ -56,16 +88,20 @@ li > a:hover {
 }
 
 .hero-content {
-    color: #DCBF85;
+    color: #180c0c;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 .hero-b {
     margin-top: 10px;
-    background-color: #8B635C;
+    background-color: #ed1f24;
     color: white;
     padding: 2%;
     border-radius: 10px;
+}
+
+.ofertas {
+    color: #f8ef22;
 }
 
 .productos {
@@ -83,10 +119,10 @@ li > a:hover {
     width: 300px;
     height: auto;
     padding: 10px;
-    border: 2px solid #DCBF85;
+    border: 2px solid #ed1f24;
     border-radius: 30px;
     margin: 20px;
-    overflow: hidden; /* Evita cualquier desbordamiento visual */
+    overflow: hidden; /* evita cualquier desbordamiento visual */
 }
 
 .imgpro {
@@ -95,10 +131,15 @@ li > a:hover {
 }
 
 button {
-    background-color: #8B635C;
+    background-color: #ed1f24;
     color: white;
     padding: 1%;
     border-radius: 10px;
+}
+
+.btn-danger:hover {
+    background-color: #f8ef22;
+    color: #180c0c;
 }
 
 .compra-contenedor {
@@ -107,6 +148,12 @@ button {
     justify-content: center;
     gap: 10px;
     margin-top: 15px;
+}
+
+.compra-contenedor > button {
+    background-color: #f8ef22;
+    color: #180c0c;
+    border-color: #f8ef22;
 }
 
 .yacasi {
@@ -118,8 +165,13 @@ button {
     padding: 2%;
 }
 
+.casi{
+    font-weight: bold;
+}
+
 .casi:hover {
-    background-color: black;
+    background-color: #f8ef22;
+    color: #180c0c;
 }
 
 .contacto {
@@ -128,27 +180,93 @@ button {
     margin-top: 5%;
 }
 
+.min-vh-100 {
+    min-height: 0 !important;
+}
+
 .form {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 450px;
     justify-content: right;
 }
 
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #180c0c;
+    color: #ffffff;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 1%;
+    flex-grow: 0 !important;
+
+}
+
+.pies {
+    display: flex !important;
+    flex-direction: row !important;     
+    justify-content: center !important;  
+    width: auto !important;             
+    flex-grow: 0 !important;            
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 0 10px 0 !important;      
+}
+
+.pies li {
+    display: inline-block !important;
+    padding: 0 15px !important;         
+    margin: 0 !important;
+}
+
+.pie {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+.footer > p {
+    margin: 0;
+}
+
+@media (max-width: 980px){
+    .form {
+        width: 300px;
+    }
+}
+
+@media (max-width: 770px){
+    .form {
+        width: 90%;
+        justify-content: center;
+    }
+}
 
 @media (max-width: 600px) {
     ul {
     list-style: none;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: end;
     flex-wrap: wrap;
     align-items: end;
     text-align: right;
     width: 50%;
 }
+
+.pages {
+    justify-content: space-around;
+    padding: 1.5%;
+}
+
 li {
-    padding-top: 5%;
+    padding: 1%;
+}
+.hero {
+    text-align: center;
 }
 }
 
