@@ -223,9 +223,13 @@ button {
 }
 
 .pie {
-    color: #ffffff !important;
+    color: #ffffff ;
     text-decoration: none !important;
     font-weight: bold !important;
+}
+
+.pie a:hover {
+    color: #f8ef22;
 }
 
 .footer > p {
